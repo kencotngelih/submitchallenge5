@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightYellow"
+    tools:context=".VsCpuActivity">
+
+    <ImageView
+        android:id="@+id/ivCpuClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_close"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/ivCpuTitle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tvCpuVs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="-30"
+        android:text="VS"
+        android:textColor="@color/Black"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCpuKertas"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivCpuKertas" />
+
+    <ImageView
+        android:id="@+id/ivCpuRefresh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_refresh"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="48dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCpuPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PEMAIN 1"
+        android:textColor="@color/Blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@id/ivCpuTitle"
+        android:layout_marginTop="12dp"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:id="@+id/ivCpuBatu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_batu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCpuPlayer"
+        android:layout_marginTop="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivCpuKertas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_kertas"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@id/ivCpuBatu"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:id="@+id/ivCpuGunting"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_gunting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@id/ivCpuKertas"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/tvCpuCpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPU"
+        android:textColor="@color/Blue"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@id/ivCpuTitle"
+        android:layout_marginTop="12dp"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/ivCpuBatuCpu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_batu"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCpuCpu"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:id="@+id/ivCpuKertasCpu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_kertas"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@id/ivCpuBatuCpu"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:id="@+id/ivCpuGuntingCpu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_gunting"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@id/ivCpuKertasCpu"
+        android:layout_marginTop="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
